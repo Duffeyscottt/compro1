@@ -34,6 +34,14 @@ class MainForm(Form):
         self._label24 = System.Windows.Forms.Label()
         self._label25 = System.Windows.Forms.Label()
         self._label18 = System.Windows.Forms.Label()
+        self._label27 = System.Windows.Forms.Label()
+        self._label28 = System.Windows.Forms.Label()
+        self._button1 = System.Windows.Forms.Button()
+        self._button2 = System.Windows.Forms.Button()
+        self._button3 = System.Windows.Forms.Button()
+        self._label29 = System.Windows.Forms.Label()
+        self._label26 = System.Windows.Forms.Label()
+        self._label30 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # label2
@@ -245,10 +253,110 @@ class MainForm(Form):
         self._label18.TabIndex = 26
         self._label18.Text = "."
         # 
+        # label27
+        # 
+        self._label27.AccessibleName = ""
+        self._label27.BackColor = System.Drawing.Color.Black
+        self._label27.Font = System.Drawing.Font("Segoe Marker", 25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label27.ForeColor = System.Drawing.Color.White
+        self._label27.Location = System.Drawing.Point(2, 1)
+        self._label27.Name = "label27"
+        self._label27.Size = System.Drawing.Size(283, 78)
+        self._label27.TabIndex = 28
+        self._label27.Text = "Favorite Sport"
+        # 
+        # label28
+        # 
+        self._label28.AccessibleName = ""
+        self._label28.BackColor = System.Drawing.Color.Black
+        self._label28.Font = System.Drawing.Font("Segoe Marker", 25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label28.ForeColor = System.Drawing.Color.White
+        self._label28.Location = System.Drawing.Point(451, 63)
+        self._label28.Name = "label28"
+        self._label28.Size = System.Drawing.Size(283, 78)
+        self._label28.TabIndex = 30
+        self._label28.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        # 
+        # button1
+        # 
+        self._button1.BackColor = System.Drawing.Color.Black
+        self._button1.Font = System.Drawing.Font("Segoe Marker", 20, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button1.ForeColor = System.Drawing.Color.White
+        self._button1.Location = System.Drawing.Point(12, 88)
+        self._button1.Name = "button1"
+        self._button1.Size = System.Drawing.Size(84, 42)
+        self._button1.TabIndex = 31
+        self._button1.Text = "Show"
+        self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
+        # 
+        # button2
+        # 
+        self._button2.BackColor = System.Drawing.Color.Black
+        self._button2.Font = System.Drawing.Font("Segoe Marker", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button2.ForeColor = System.Drawing.Color.White
+        self._button2.Location = System.Drawing.Point(582, 12)
+        self._button2.Name = "button2"
+        self._button2.Size = System.Drawing.Size(69, 38)
+        self._button2.TabIndex = 32
+        self._button2.Text = "Clear"
+        self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
+        # 
+        # button3
+        # 
+        self._button3.BackColor = System.Drawing.Color.Black
+        self._button3.Font = System.Drawing.Font("Segoe Marker", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button3.ForeColor = System.Drawing.Color.White
+        self._button3.Location = System.Drawing.Point(657, 12)
+        self._button3.Name = "button3"
+        self._button3.Size = System.Drawing.Size(69, 38)
+        self._button3.TabIndex = 33
+        self._button3.Text = "Exit"
+        self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
+        # 
+        # label29
+        # 
+        self._label29.AccessibleName = ""
+        self._label29.BackColor = System.Drawing.Color.Black
+        self._label29.Location = System.Drawing.Point(176, 145)
+        self._label29.Name = "label29"
+        self._label29.Size = System.Drawing.Size(403, 132)
+        self._label29.TabIndex = 34
+        # 
+        # label26
+        # 
+        self._label26.AccessibleName = ""
+        self._label26.BackColor = System.Drawing.Color.Black
+        self._label26.Location = System.Drawing.Point(183, 9)
+        self._label26.Name = "label26"
+        self._label26.Size = System.Drawing.Size(403, 132)
+        self._label26.TabIndex = 29
+        # 
+        # label30
+        # 
+        self._label30.AccessibleName = ""
+        self._label30.BackColor = System.Drawing.Color.Black
+        self._label30.Font = System.Drawing.Font("Segoe Marker", 20, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label30.ForeColor = System.Drawing.Color.White
+        self._label30.Location = System.Drawing.Point(2, 40)
+        self._label30.Name = "label30"
+        self._label30.Size = System.Drawing.Size(283, 45)
+        self._label30.TabIndex = 35
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.SystemColors.ControlText
         self.ClientSize = System.Drawing.Size(738, 142)
+        self.Controls.Add(self._label30)
+        self.Controls.Add(self._label29)
+        self.Controls.Add(self._button3)
+        self.Controls.Add(self._button2)
+        self.Controls.Add(self._button1)
+        self.Controls.Add(self._label28)
+        self.Controls.Add(self._label26)
+        self.Controls.Add(self._label27)
         self.Controls.Add(self._label14)
         self.Controls.Add(self._label15)
         self.Controls.Add(self._label16)
@@ -284,3 +392,14 @@ class MainForm(Form):
 
     def Label5Click(self, sender, e):
         pass
+
+    def Button3Click(self, sender, e):
+        Application.Exit()
+
+    def Button1Click(self, sender, e):
+        self._label26.Location = System.Drawing.Point(176, 145)
+        self._label30.Text = "Badminton"
+
+    def Button2Click(self, sender, e):
+        self._label26.Location = System.Drawing.Point(183, 9)
+        self._label30.Text = " "
