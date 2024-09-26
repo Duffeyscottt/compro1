@@ -25,7 +25,7 @@ class MainForm(Form):
         # label1
         # 
         self._label1.BackColor = System.Drawing.Color.MediumAquamarine
-        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 14, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.ForeColor = System.Drawing.Color.FromArgb(0, 0, 64)
         self._label1.Location = System.Drawing.Point(12, 30)
         self._label1.Name = "label1"
@@ -37,7 +37,7 @@ class MainForm(Form):
         # label2
         # 
         self._label2.BackColor = System.Drawing.Color.MediumAquamarine
-        self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 14, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label2.ForeColor = System.Drawing.Color.FromArgb(0, 0, 64)
         self._label2.Location = System.Drawing.Point(12, 69)
         self._label2.Name = "label2"
@@ -49,7 +49,7 @@ class MainForm(Form):
         # label3
         # 
         self._label3.BackColor = System.Drawing.Color.MediumTurquoise
-        self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 14, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.ForeColor = System.Drawing.Color.FromArgb(0, 0, 64)
         self._label3.Location = System.Drawing.Point(13, 162)
         self._label3.Name = "label3"
@@ -61,7 +61,7 @@ class MainForm(Form):
         # label4
         # 
         self._label4.BackColor = System.Drawing.Color.MediumTurquoise
-        self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label4.Font = System.Drawing.Font("Microsoft Sans Serif", 14, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label4.ForeColor = System.Drawing.Color.FromArgb(0, 0, 64)
         self._label4.Location = System.Drawing.Point(13, 210)
         self._label4.Name = "label4"
@@ -193,4 +193,4 @@ class MainForm(Form):
         
 
     def Button3Click(self, sender, e):
-        pass
+        Application.Exit()
