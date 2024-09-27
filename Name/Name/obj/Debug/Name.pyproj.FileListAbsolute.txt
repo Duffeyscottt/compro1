@@ -1,0 +1,10 @@
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Name.exe.config
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Name.exe
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Name.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\IronPython.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\IronPython.Modules.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Microsoft.Scripting.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\duffey.s\Desktop\compro1\Name\Name\obj\Debug\Name.pyprojResolveAssemblyReference.cache
+C:\Users\duffey.s\Desktop\compro1\Name\Name\obj\Debug\Name.exe

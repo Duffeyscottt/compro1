@@ -128,13 +128,13 @@ class MainForm(Form):
         # 
         # label9
         # 
-        self._label9.Font = System.Drawing.Font("French Script MT", 30, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label9.ForeColor = System.Drawing.Color.PowderBlue
+        self._label9.Font = System.Drawing.Font("Gadugi", 15.75, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
+        self._label9.ForeColor = System.Drawing.Color.DarkCyan
         self._label9.Location = System.Drawing.Point(-3, 7)
         self._label9.Name = "label9"
         self._label9.Size = System.Drawing.Size(325, 183)
         self._label9.TabIndex = 11
-        self._label9.Text = "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+        self._label9.Text = "\"It's not about making money it's about taking money; destroying the status quo because the status is NOT quo. The world is a mess and I just need to rule it.\"            - Dr. Horrible"
         # 
         # MainForm
         # 

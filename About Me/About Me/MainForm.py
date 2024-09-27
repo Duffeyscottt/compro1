@@ -156,6 +156,6 @@ class MainForm(Form):
         pass
 
     def Button2Click(self, sender, e):
-        self._label1.Text = "battery acid" #placeholder text
+        self._label1.Text = "My last name has an uncomon spelling of Duffey instead of Duffy or Duffie and my dad thinks it's because one of our ancestors was some illiterate scottish farmer that just guessed the spelling." #placeholder text
         self._label1.ForeColor = Color.Black
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
