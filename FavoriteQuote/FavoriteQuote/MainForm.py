@@ -129,7 +129,7 @@ class MainForm(Form):
         # label9
         # 
         self._label9.Font = System.Drawing.Font("Gadugi", 15.75, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
-        self._label9.ForeColor = System.Drawing.Color.DarkCyan
+        self._label9.ForeColor = System.Drawing.Color.PowderBlue
         self._label9.Location = System.Drawing.Point(-3, 7)
         self._label9.Name = "label9"
         self._label9.Size = System.Drawing.Size(325, 183)

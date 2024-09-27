@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # SharpDevelop 4.4
-Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Name", "Name\Name.pyproj", "{A499C455-795B-47ED-9245-61D068A75F95}"
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Name", "Name\Name.pyproj", "{ABEFB9D3-4D05-417E-B0C8-5AC5FACD20C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,9 +10,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A499C455-795B-47ED-9245-61D068A75F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A499C455-795B-47ED-9245-61D068A75F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A499C455-795B-47ED-9245-61D068A75F95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A499C455-795B-47ED-9245-61D068A75F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEFB9D3-4D05-417E-B0C8-5AC5FACD20C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEFB9D3-4D05-417E-B0C8-5AC5FACD20C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEFB9D3-4D05-417E-B0C8-5AC5FACD20C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEFB9D3-4D05-417E-B0C8-5AC5FACD20C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
