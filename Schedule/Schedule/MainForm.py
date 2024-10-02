@@ -30,6 +30,7 @@ class MainForm(Form):
         # label2
         # 
         self._label2.Font = System.Drawing.Font("Impact", 20, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label2.ForeColor = System.Drawing.Color.DarkSlateGray
         self._label2.Location = System.Drawing.Point(66, 62)
         self._label2.Name = "label2"
         self._label2.Size = System.Drawing.Size(279, 345)
