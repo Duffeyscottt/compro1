@@ -39,6 +39,7 @@ class MainForm(Form):
         self._button1.TabIndex = 1
         self._button1.Text = "exit"
         self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -52,6 +53,7 @@ class MainForm(Form):
         self._button2.TabIndex = 2
         self._button2.Text = "clear"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -65,6 +67,7 @@ class MainForm(Form):
         self._button3.TabIndex = 3
         self._button3.Text = "show"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label2
         # 
@@ -94,4 +97,13 @@ class MainForm(Form):
 
 
 
-# numbers (608) 755-3015   (608) 580-0397   (608) 676-5569   (815) 965-3433   
+# numbers (608) 755-3015   (608) 580-0397   (608) 676-5569   (815) 965-3433   (608) 884-2299
+
+    def Button1Click(self, sender, e):
+        Application.Exit()
+
+    def Button2Click(self, sender, e):
+        self._label2.Text = " "
+
+    def Button3Click(self, sender, e):
+        self._label2.Text = "(608) 755-3015" + "\n (608) 580-0397" + "\n (608) 676-5569" + "\n (815) 965-3433" + "\n (608) 884-2299"
