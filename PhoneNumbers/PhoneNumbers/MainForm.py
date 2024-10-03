@@ -75,7 +75,6 @@ class MainForm(Form):
         self._label2.Name = "label2"
         self._label2.Size = System.Drawing.Size(285, 369)
         self._label2.TabIndex = 4
-        self._label2.Text = "l"
         self._label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         # 
         # MainForm
