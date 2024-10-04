@@ -97,7 +97,6 @@ class MainForm(Form):
 
 
 
-# numbers (608) 755-3015   (608) 580-0397   (608) 676-5569   (815) 965-3433   (608) 884-2299
 
     def Button1Click(self, sender, e):
         Application.Exit()
