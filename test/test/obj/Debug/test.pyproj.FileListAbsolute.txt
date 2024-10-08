@@ -1,0 +1,3 @@
+C:\Users\duffey.s\Desktop\compro1\test\test\obj\Debug\test.pyprojResolveAssemblyReference.cache
+C:\Users\duffey.s\Desktop\compro1\test\test\obj\Debug\test.MainForm.resources
+C:\Users\duffey.s\Desktop\compro1\test\test\obj\Debug\test.pyproj.GenerateResource.Cache
