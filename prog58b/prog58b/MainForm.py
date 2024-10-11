@@ -210,4 +210,5 @@ class MainForm(Form):
         numA = int(self._textBox1.Text)
         numB = int(self._textBox2.Text)
         numC = int(self._textBox3.Text)
-        Roots = (-numB
+        Roots = -numB + math.sqrt(numB^2 - 4*numA*numC)/2*numA
+        self._label6.Text = str(Roots)
