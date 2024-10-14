@@ -56,4 +56,7 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        
+        pi = (3.14159)
+        radius = float(self._textBox1)
+        area = pi * radius**2
+        area = round(area,3)
