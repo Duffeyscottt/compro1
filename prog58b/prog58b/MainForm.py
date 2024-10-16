@@ -22,6 +22,7 @@ class MainForm(Form):
         self._button3 = System.Windows.Forms.Button()
         self._label5 = System.Windows.Forms.Label()
         self._label6 = System.Windows.Forms.Label()
+        self._label7 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # label1
@@ -169,16 +170,28 @@ class MainForm(Form):
         self._label6.BackColor = System.Drawing.Color.FromArgb(0, 0, 64)
         self._label6.Font = System.Drawing.Font("Engravers MT", 27, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
         self._label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        self._label6.Location = System.Drawing.Point(98, 109)
+        self._label6.Location = System.Drawing.Point(98, 117)
         self._label6.Name = "label6"
-        self._label6.Size = System.Drawing.Size(167, 104)
+        self._label6.Size = System.Drawing.Size(167, 51)
         self._label6.TabIndex = 11
         self._label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        # 
+        # label7
+        # 
+        self._label7.BackColor = System.Drawing.Color.FromArgb(0, 0, 64)
+        self._label7.Font = System.Drawing.Font("Engravers MT", 27, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0)
+        self._label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        self._label7.Location = System.Drawing.Point(98, 168)
+        self._label7.Name = "label7"
+        self._label7.Size = System.Drawing.Size(167, 45)
+        self._label7.TabIndex = 12
+        self._label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.SystemColors.HotTrack
         self.ClientSize = System.Drawing.Size(606, 267)
+        self.Controls.Add(self._label7)
         self.Controls.Add(self._label6)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._button3)
@@ -202,6 +215,7 @@ class MainForm(Form):
 
     def Button2Click(self, sender, e):
         self._label6.Text = " "
+        self._label7.Text = " "
         self._textBox1.Text = " "
         self._textBox2.Text = " "
         self._textBox3.Text = " "
@@ -210,5 +224,7 @@ class MainForm(Form):
         numA = int(self._textBox1.Text)
         numB = int(self._textBox2.Text)
         numC = int(self._textBox3.Text)
-        Roots = -numB + math.sqrt(numB^2 - 4*numA*numC)/2*numA
-        self._label6.Text = str(Roots)
+        Rootpos = (-numB + math.sqrt(numB**2 - 4*numA*numC))/2*numA
+        Rootneg = (-numB - math.sqrt(numB**2 - 4*numA*numC))/2*numA
+        self._label6.Text = str(Rootpos)
+        self._label7.Text = str(Rootneg)
