@@ -288,4 +288,17 @@ class MainForm(Form):
             self._label14.Text = "No change to be given."
         elif total < paid:
             change = paid - total
-            
+            dollars = change // 1
+            self._label13.Text = str(dollars)
+            cents = change % 1 * 100
+            cents = round(cents, 2)
+            quarters = cents // 25
+            centsminuquar = cents % 25
+            dimes = centsminuquar // 10
+            centsminudime = centsminuquar % 10
+            nickles = centsminudime // 5
+            pennies = centsminudime % 5
+            self._label12.Text = str(quarters)
+            self._label11.Text = str(dimes)
+            self._label10.Text = str(nickles)
+            self._label9.Text = str(pennies)
