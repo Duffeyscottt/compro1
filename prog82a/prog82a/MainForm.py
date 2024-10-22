@@ -153,6 +153,7 @@ class MainForm(Form):
         Application.Exit()
 
     def Button3Click(self, sender, e):
+        self._label3.Font = System.Drawing.Font("Playbill", 50, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label3.Text = " "
         self._textBox1.Text = " "
         self._textBox2.Text = " "
@@ -161,6 +162,10 @@ class MainForm(Form):
         limit = int(self._textBox1.Text)
         speed = int(self._textBox2.Text)
         if speed > limit:
+            self._label3.Font = System.Drawing.Font("Playbill", 50, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
             over = speed - limit
             fine = 20.00 + (over * 5.00)
             self._label3.Text = "$" + str(fine)
+        else:
+            self._label3.Font = System.Drawing.Font("Playbill", 30, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+            self._label3.Text = "You're a law abiding citizen :)"
