@@ -27,6 +27,7 @@ class MainForm(Form):
         self._button1.TabIndex = 0
         self._button1.Text = "Calculate"
         self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -102,3 +103,17 @@ class MainForm(Form):
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = " "
+
+    def Button1Click(self, sender, e):
+        kwh = float(self._textBox1.Text)
+        base = kwh * 0.0475
+        base = round(base, 2)
+        surcharge = base * 0.1
+        surcharge = round(surcharge, 2)
+        citytax = base * 0.03
+        citytax = round(citytax, 2)
+        total = base + citytax + surcharge
+        total = round(total, 2)
+        lateTotal = total * 1.04
+        lateTotal = round(lateTotal, 2)
+        self._listBox1.Items.Add(#finish this)
