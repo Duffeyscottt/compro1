@@ -14,7 +14,7 @@ class MainForm(Form):
         self._button3 = System.Windows.Forms.Button()
         self._label1 = System.Windows.Forms.Label()
         self._textBox1 = System.Windows.Forms.TextBox()
-        self._listBox1 = System.Windows.Forms.ListBox()
+        self._label2 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # button1
@@ -72,26 +72,26 @@ class MainForm(Form):
         self._textBox1.Size = System.Drawing.Size(167, 20)
         self._textBox1.TabIndex = 4
         # 
-        # listBox1
+        # label2
         # 
-        self._listBox1.Font = System.Drawing.Font("Gill Sans MT", 13, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._listBox1.FormattingEnabled = True
-        self._listBox1.ItemHeight = 25
-        self._listBox1.Location = System.Drawing.Point(132, 39)
-        self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(277, 229)
-        self._listBox1.TabIndex = 5
+        self._label2.BackColor = System.Drawing.Color.White
+        self._label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        self._label2.Font = System.Drawing.Font("Gill Sans MT", 13)
+        self._label2.Location = System.Drawing.Point(132, 39)
+        self._label2.Name = "label2"
+        self._label2.Size = System.Drawing.Size(277, 233)
+        self._label2.TabIndex = 6
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.FromArgb(255, 255, 192)
         self.ClientSize = System.Drawing.Size(421, 281)
-        self.Controls.Add(self._listBox1)
         self.Controls.Add(self._textBox1)
         self.Controls.Add(self._label1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
+        self.Controls.Add(self._label2)
         self.Name = "MainForm"
         self.Text = "prog93a"
         self.ResumeLayout(False)
@@ -103,9 +103,10 @@ class MainForm(Form):
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = " "
+        self._label2.Text = " "
 
     def Button1Click(self, sender, e):
-        kwh = float(self._textBox1.Text)
+        kwh = int(self._textBox1.Text)
         base = kwh * 0.0475
         base = round(base, 2)
         surcharge = base * 0.1
@@ -116,4 +117,16 @@ class MainForm(Form):
         total = round(total, 2)
         lateTotal = total * 1.04
         lateTotal = round(lateTotal, 2)
-        self._listBox1.Items.Add(#finish this)
+        #C O M P S C I Electric
+#------------------------------------------------
+#Kilowatts Used 993
+#------------------------------------------------
+#Base Rate 993 @ $ 0.0475 $ 47.17
+#Surcharge $ 4.72
+#Citytax $ 1.42
+#______
+#Pay this amount $ 53.31
+#After May 20th Pay $ 55.44
+        recipt = "C O M P S C I Electric" + "\nKilowatts used:   " + str(kwh) + "\nBase Rate   " \
+        + str(kwh) + "* $ 0.0475   $" + str(base) 
+        self._label2.Text = str(recipt)
