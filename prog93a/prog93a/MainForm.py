@@ -128,5 +128,6 @@ class MainForm(Form):
 #Pay this amount $ 53.31
 #After May 20th Pay $ 55.44
         recipt = "C O M P S C I Electric" + "\nKilowatts used:   " + str(kwh) + "\nBase Rate   " \
-        + str(kwh) + "* $ 0.0475   $" + str(base) 
+        + str(kwh) + "* $ 0.0475   $" + str(base) + "\nSurcharge  $" + str(surcharge) + "\nCitytax   $" \
+        + str(citytax) + "\n________" + "\nPay this amount   $" + str(total) + "\nAfter May 20th pay   $" +str(lateTotal)
         self._label2.Text = str(recipt)
