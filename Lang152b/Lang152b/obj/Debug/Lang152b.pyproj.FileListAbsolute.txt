@@ -1,0 +1,12 @@
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Lang152b.exe.config
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Lang152b.exe
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Lang152b.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\IronPython.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\IronPython.Modules.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Microsoft.Scripting.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\obj\Debug\Lang152b.pyprojResolveAssemblyReference.cache
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\obj\Debug\Lang152b.MainForm.resources
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\obj\Debug\Lang152b.pyproj.GenerateResource.Cache
+C:\Users\duffey.s\Desktop\compro1\Lang152b\Lang152b\obj\Debug\Lang152b.exe
