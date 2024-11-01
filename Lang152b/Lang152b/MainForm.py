@@ -92,7 +92,7 @@ class MainForm(Form):
         num = float(self._textBox1.Text)
         sum = 0
         int = 0
-        while sum <= num:
+        while sum < num:
             int = int + 2
             sum = sum + int
             text = str(int) + "\t" + str(sum)
