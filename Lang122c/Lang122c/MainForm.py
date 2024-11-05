@@ -78,11 +78,11 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         x = 0
         while x < 10:
-            x = + 2
+            x = x + 2
             col2 = x + 1
             col3 = x *2
-            #col4 = x ^2
-            t = str(x) + "\t" + str(col2) + "\t" + str(col3) #+ "\t" + str(col4)
+            col4 = x ** 2
+            t = str(x) + "\t" + str(col2) + "\t" + str(col3) + "\t" + str(col4)
             self._listBox1.Items.Add(t)
 
     def Button3Click(self, sender, e):
