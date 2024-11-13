@@ -1,0 +1,12 @@
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\pg140SimpleCalc.exe.config
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\pg140SimpleCalc.exe
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\pg140SimpleCalc.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\IronPython.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\IronPython.Modules.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\Microsoft.Scripting.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\obj\Debug\pg140SimpleCalc.pyprojResolveAssemblyReference.cache
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\obj\Debug\pg140SimpleCalc.MainForm.resources
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\obj\Debug\pg140SimpleCalc.pyproj.GenerateResource.Cache
+C:\Users\duffey.s\Desktop\compro1\pg140SimpleCalc\pg140SimpleCalc\obj\Debug\pg140SimpleCalc.exe

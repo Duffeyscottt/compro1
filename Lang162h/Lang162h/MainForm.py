@@ -32,7 +32,7 @@ class MainForm(Form):
         # 
         self._label1.BackColor = System.Drawing.Color.LawnGreen
         self._label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 28, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 20, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.Location = System.Drawing.Point(129, 142)
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(143, 54)
