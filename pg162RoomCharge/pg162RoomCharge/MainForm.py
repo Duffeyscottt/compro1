@@ -175,6 +175,7 @@ class MainForm(Form):
         self._button1.TabIndex = 7
         self._button1.Text = "Calculate Charges"
         self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -212,7 +213,7 @@ class MainForm(Form):
         self._label4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         self._label4.Location = System.Drawing.Point(214, 83)
         self._label4.Name = "label4"
-        self._label4.Size = System.Drawing.Size(100, 20)
+        self._label4.Size = System.Drawing.Size(205, 20)
         self._label4.TabIndex = 10
         self._label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
@@ -224,7 +225,7 @@ class MainForm(Form):
         self._label5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         self._label5.Location = System.Drawing.Point(214, 119)
         self._label5.Name = "label5"
-        self._label5.Size = System.Drawing.Size(100, 20)
+        self._label5.Size = System.Drawing.Size(205, 20)
         self._label5.TabIndex = 11
         self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
@@ -522,6 +523,7 @@ class MainForm(Form):
         self.Controls.Add(self._label1)
         self.Name = "MainForm"
         self.Text = "pg162RoomCharge"
+        self.Load += self.MainFormLoad
         self._groupBox1.ResumeLayout(False)
         self._groupBox1.PerformLayout()
         self._groupBox2.ResumeLayout(False)
@@ -532,3 +534,31 @@ class MainForm(Form):
 
     def GroupBox1Enter(self, sender, e):
         pass
+
+    def MainFormLoad(self, sender, e):
+        from datetime import date 
+        self._label4.Text = date.today().strftime("%A, %B %d, %Y")
+        import time 
+        self._label5.Text = time.strftime("%I:%M:%S %p")
+
+    def Button1Click(self, sender, e):
+        decRoomCharges = 0.0
+        decAddCharges  = 0.0
+        decSubtotal    = 0.0
+        decTotal       = 0.0
+        decTAX_RATE    = 0.08
+        
+        try: 
+            decAddCharges = float(self._textBox3.Text) + \
+                float(self._textBox4.Text) + \
+                float(self._textBox5.Text)
+            self._label21.Text = str(round(decAddCharges, 2))
+        except:
+            MessageBox.Show("Room Servie, Telephone, and Misc. must be numbers", "Error")
+        
+        try:
+            decRoomCharges = float(self._textBox1.Text) * \
+                float(self._textBox2.Text)
+            self._label20.Text = str(round(decRoomCharges, 2))
+        except:
+            MessageBox.Show("Nights and Nightly Charge must be numbers", "Error")
