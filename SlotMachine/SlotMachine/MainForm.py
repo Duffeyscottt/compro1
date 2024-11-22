@@ -104,10 +104,11 @@ class MainForm(Form):
         self._button2.BackColor = System.Drawing.Color.Maroon
         self._button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         self._button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._button2.ForeColor = System.Drawing.Color.FromArgb(255, 128, 0)
         self._button2.Location = System.Drawing.Point(438, 272)
         self._button2.Name = "button2"
-        self._button2.Size = System.Drawing.Size(232, 23)
+        self._button2.Size = System.Drawing.Size(232, 31)
         self._button2.TabIndex = 5
         self._button2.Text = "Pick Pocket"
         self._button2.UseVisualStyleBackColor = False
@@ -115,44 +116,57 @@ class MainForm(Form):
         # 
         # label1
         # 
-        self._label1.Location = System.Drawing.Point(438, 298)
+        self._label1.BackColor = System.Drawing.Color.FromArgb(192, 64, 0)
+        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.ForeColor = System.Drawing.Color.FromArgb(192, 255, 192)
+        self._label1.Location = System.Drawing.Point(438, 309)
         self._label1.Name = "label1"
-        self._label1.Size = System.Drawing.Size(100, 23)
+        self._label1.Size = System.Drawing.Size(232, 30)
         self._label1.TabIndex = 6
         self._label1.Text = "Bet:"
         self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
         # textBox1
         # 
-        self._textBox1.Location = System.Drawing.Point(475, 301)
+        self._textBox1.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
+        self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._textBox1.ForeColor = System.Drawing.Color.FromArgb(192, 64, 0)
+        self._textBox1.Location = System.Drawing.Point(491, 309)
         self._textBox1.Name = "textBox1"
-        self._textBox1.Size = System.Drawing.Size(195, 20)
+        self._textBox1.Size = System.Drawing.Size(179, 30)
         self._textBox1.TabIndex = 7
         # 
         # label2
         # 
-        self._label2.BackColor = System.Drawing.Color.FromArgb(224, 224, 224)
-        self._label2.Location = System.Drawing.Point(475, 340)
+        self._label2.BackColor = System.Drawing.Color.FromArgb(255, 192, 128)
+        self._label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 15, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label2.ForeColor = System.Drawing.Color.FromArgb(192, 64, 0)
+        self._label2.Location = System.Drawing.Point(491, 351)
         self._label2.Name = "label2"
-        self._label2.Size = System.Drawing.Size(195, 25)
+        self._label2.Size = System.Drawing.Size(179, 32)
         self._label2.TabIndex = 8
         self._label2.Text = "100"
+        self._label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
         # label3
         # 
-        self._label3.Location = System.Drawing.Point(438, 342)
+        self._label3.BackColor = System.Drawing.Color.FromArgb(192, 64, 0)
+        self._label3.Font = System.Drawing.Font("Microsoft Sans Serif", 12, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label3.ForeColor = System.Drawing.Color.FromArgb(192, 255, 192)
+        self._label3.Location = System.Drawing.Point(438, 353)
         self._label3.Name = "label3"
-        self._label3.Size = System.Drawing.Size(100, 23)
+        self._label3.Size = System.Drawing.Size(232, 30)
         self._label3.TabIndex = 9
         self._label3.Text = "Cash:"
         self._label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         # 
         # progressBar1
         # 
-        self._progressBar1.Location = System.Drawing.Point(438, 407)
+        self._progressBar1.Location = System.Drawing.Point(438, 396)
         self._progressBar1.Maximum = 15000
         self._progressBar1.Name = "progressBar1"
-        self._progressBar1.Size = System.Drawing.Size(232, 23)
+        self._progressBar1.Size = System.Drawing.Size(232, 34)
         self._progressBar1.TabIndex = 10
         # 
         # pictureBox5
@@ -291,7 +305,7 @@ class MainForm(Form):
             currentm = float(self._label2.Text)
             self._label2.Text = str(round(currentm + money, 2))
         
-        pass
+        
 
     def Button1Click(self, sender, e):
         im1    = self._pictureBox5.BackgroundImage
@@ -350,8 +364,9 @@ class MainForm(Form):
             
             if newmoney <= 0:
                 MessageBox.Show("You ran out of cash!")
-            pass
-        pass
+        
+            
+        
 
     def Timer1Tick(self, sender, e):
         im1    = self._pictureBox5.BackgroundImage
@@ -390,9 +405,9 @@ class MainForm(Form):
                 self._pictureBox4.Visible = False
                 self._button1.BackgroundImage = levOff
                 self._button1.Enabled = True
+                
             
         
-        pass
+        
     
-    #    Find number to put in and change lever to "Pull the lever, Kronk!" make 
-    #    loading gif into to mr bean waiting in field
+  

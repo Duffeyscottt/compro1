@@ -53,7 +53,7 @@ class MainForm(Form):
         # 
         self._label1.BackColor = System.Drawing.Color.Maroon
         self._label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        self._label1.Font = System.Drawing.Font("Agency FB", 26, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Font = System.Drawing.Font("Agency FB", 25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.ForeColor = System.Drawing.Color.FromArgb(255, 128, 0)
         self._label1.Location = System.Drawing.Point(100, 9)
         self._label1.Name = "label1"
@@ -190,6 +190,7 @@ class MainForm(Form):
         self._button2.TabIndex = 8
         self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -204,6 +205,7 @@ class MainForm(Form):
         self._button3.TabIndex = 9
         self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label4
         # 
@@ -245,7 +247,7 @@ class MainForm(Form):
         # label7
         # 
         self._label7.BackColor = System.Drawing.Color.Maroon
-        self._label7.Font = System.Drawing.Font("Agency FB", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label7.Font = System.Drawing.Font("Agency FB", 10, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label7.ForeColor = System.Drawing.Color.FromArgb(255, 128, 0)
         self._label7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         self._label7.Location = System.Drawing.Point(6, 69)
@@ -258,7 +260,7 @@ class MainForm(Form):
         # label8
         # 
         self._label8.BackColor = System.Drawing.Color.Maroon
-        self._label8.Font = System.Drawing.Font("Agency FB", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label8.Font = System.Drawing.Font("Agency FB", 11, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label8.ForeColor = System.Drawing.Color.FromArgb(255, 128, 0)
         self._label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         self._label8.Location = System.Drawing.Point(6, 29)
@@ -562,3 +564,33 @@ class MainForm(Form):
             self._label20.Text = str(round(decRoomCharges, 2))
         except:
             MessageBox.Show("Nights and Nightly Charge must be numbers", "Error")
+            
+        decSubtotal = decAddCharges + decRoomCharges
+        self._label23.Text = str(round(decSubtotal, 2))
+        
+        decTax = decSubtotal * decTAX_RATE
+        self._label22.Text = str(round(decTax, 2))
+        
+        decTotal = decTax + decSubtotal
+        self._label24.Text = str(round(decTotal, 2))
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        self._textBox4.Text = ""
+        self._textBox5.Text = ""
+        
+        self._label20.Text = ""
+        self._label21.Text = ""
+        self._label22.Text = ""
+        self._label23.Text = ""
+        self._label24.Text = ""
+        
+        from datetime import date 
+        self._label4.Text = date.today().strftime("%A, %B %d, %Y")
+        import time 
+        self._label5.Text = time.strftime("%I:%M:%S %p")
+
+    def Button3Click(self, sender, e):
+        Application.Exit()
