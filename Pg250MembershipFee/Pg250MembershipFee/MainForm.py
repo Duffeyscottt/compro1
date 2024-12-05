@@ -7,6 +7,9 @@ from System.Windows.Forms import *
 class MainForm(Form):
     def __init__(self):
         self.InitializeComponent()
+        self.dis4n6 = 0.05
+        self.dis7n9 = 0.08
+        self.dis10more = 0.1
     
     def InitializeComponent(self):
         self._groupBox1 = System.Windows.Forms.GroupBox()
@@ -109,6 +112,7 @@ class MainForm(Form):
         self._calc.TabIndex = 2
         self._calc.Text = "Calculate"
         self._calc.UseVisualStyleBackColor = True
+        self._calc.Click += self.CalcClick
         # 
         # exit
         # 
@@ -235,6 +239,7 @@ class MainForm(Form):
         # fee
         # 
         self._fee.BackColor = System.Drawing.Color.Snow
+        self._fee.ForeColor = System.Drawing.Color.Black
         self._fee.Location = System.Drawing.Point(130, 37)
         self._fee.Name = "fee"
         self._fee.Size = System.Drawing.Size(113, 26)
@@ -243,6 +248,7 @@ class MainForm(Form):
         # total
         # 
         self._total.BackColor = System.Drawing.Color.Snow
+        self._total.ForeColor = System.Drawing.Color.Black
         self._total.Location = System.Drawing.Point(130, 81)
         self._total.Name = "total"
         self._total.Size = System.Drawing.Size(113, 26)
@@ -273,4 +279,55 @@ class MainForm(Form):
         Application.Exit()
 
     def ClearClick(self, sender, e):
-        pass
+        self._adult.Checked = True
+        self._yoga.Checked = False
+        self._karate.Checked = False
+        self._trainer.Checked = False
+        self._months.Clear()
+        self._fee.Text = ""
+        self._total.Text = ""
+
+    def CalcClick(self, sender, e):
+        base = 0.0
+        discount = 0.0
+        totalfee = 0.0
+        months = 0.0
+        
+        try:
+            months = int(self._months.Text)
+        except:
+            MessageBox.Show("Months must be a valid integer", "Input Error")
+        
+        if months < 1 or months > 24:
+            MessageBox.Show("Months must be a valid integer", "Input Error")
+            
+        if self._adult.Checked == True:
+            base = 40
+        elif self._child.Checked == True:
+            base = 20
+        elif self._student.Checked == True:
+            base = 25
+        elif self._senior.Checked == True:
+            base = 30
+            
+        if self._yoga.Checked == True:
+            base += 10
+        if self._karate.Checked == True:
+            base += 30
+        if self._trainer.Checked == True:
+            base += 50
+            
+        if months <= 3:
+            discount = 0.0
+        elif months >= 4 and months <= 6:
+            discount = self.dis4n6 * base
+        elif months >= 7 and months <= 9:
+            discount = self.dis7n9 * base
+        elif months >= 10:
+            discount = self.dis10more * base
+            
+        base -= discount
+        totalfee = base * months
+        
+        self._fee.Text = "$" + str(round(base, 2))
+        self._total.Text = "$" + str(round(totalfee, 2))
