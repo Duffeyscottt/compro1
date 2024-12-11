@@ -1,0 +1,12 @@
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Pg269Race.exe.config
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Pg269Race.exe
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Pg269Race.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\IronPython.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\IronPython.Modules.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Microsoft.Scripting.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\obj\Debug\Pg269Race.pyprojResolveAssemblyReference.cache
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\obj\Debug\Pg269Race.MainForm.resources
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\obj\Debug\Pg269Race.pyproj.GenerateResource.Cache
+C:\Users\duffey.s\Desktop\compro1\Pg269Race\Pg269Race\obj\Debug\Pg269Race.exe
