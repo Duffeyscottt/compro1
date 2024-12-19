@@ -281,14 +281,31 @@ class MainForm(Form):
         pass
 
     def Button1Click(self, sender, e):
-        run1 = self._run1.Text
-        run2 = self._run2.Text
-        run3 = self._run2.Text
+        run1 = str(self._run1.Text)
+        run2 = str(self._run2.Text)
+        run3 = str(self._run2.Text)
         sec1 = int(self._sec1.Text)
         sec2 = int(self._sec2.Text)
         sec3 = int(self._sec3.Text)
         
-        snn1 = sec1 + run1
+        if sec1 < sec2:
+            if sec1 < sec3:
+                self._first.Text = str(run1)
+                if sec2 < sec3:
+                    self._second.Text = str(run2)
+                    self._third.Text = str(run3)
+                else:
+                    self._second.Text = str(run3)
+                    self._third.Text = str(run2)
+            else:
+                self._second.Text = str(run3)
+                if sec2 < sec3:
+                    self._second.Text = str(run2)
+                    self._third.Text = str(run3)
+                else:
+                    self._second.Text = str(run3)
+                    self._third.Text = str(run2)
+                
         
         
         
