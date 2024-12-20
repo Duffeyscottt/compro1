@@ -194,18 +194,22 @@ class MainForm(Form):
         Application.Exit()
 
     def Button2Click(self, sender, e):
-        self._anum.Text.Clear()
-        self._cnum.Text.Clear()
-        self._bnum.Text.Clear()
+        self._anum.Text = ""
+        self._cnum.Text = ""
+        self._bnum.Text = ""
         self._acost.Text = "Package A:"
         self._ccost.Text = "Package C:"
         self._bcost.Text = "Package B:"
         self._total.Text = "Grand Total:"
 
     def Button1Click(self, sender, e):
-        anum = float(self._anum.Text)
-        bnum = float(self._bnum.Text)
-        cnum = float(self._cnum.Text)
+        try:
+            anum = float(self._anum.Text)
+            bnum = float(self._bnum.Text)
+            cnum = float(self._cnum.Text)
+        except:
+            MessageBox.Show("Please enter valid integer.", "Error")
+            Return()
         acost = anum * 99
         bcost = bnum * 199
         ccost = cnum * 299
