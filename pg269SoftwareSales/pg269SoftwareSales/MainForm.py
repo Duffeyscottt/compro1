@@ -209,7 +209,6 @@ class MainForm(Form):
             cnum = float(self._cnum.Text)
         except:
             MessageBox.Show("Please enter valid integer.", "Error")
-            Return()
         acost = anum * 99
         bcost = bnum * 199
         ccost = cnum * 299
